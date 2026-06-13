@@ -8,5 +8,4 @@ build/
 *.lock
 .venv
 .superpowers/
-.brain/
 docs
