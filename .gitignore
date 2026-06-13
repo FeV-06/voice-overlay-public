@@ -1,0 +1,12 @@
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+.vscode/
+dist/
+build/
+*.lock
+.venv
+.superpowers/
+.brain/
+docs

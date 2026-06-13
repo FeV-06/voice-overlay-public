@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-overlay"
+version = "0.1.0"
+description = "Real-time voice transcription overlay"
+requires-python = ">=3.10"
+dependencies = [
+    "faster-whisper>=1.0.0",
+    "sounddevice>=0.4.6",
+    "numpy>=1.24.0",
+    "pyside6>=6.5",
+]
+
+[project.optional-dependencies]
+linux = ["evdev"]
+windows = ["pynput"]
+
+[project.scripts]
+voice-overlay = "voice_overlay.main:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-anyio>=0.0.0",
+    "pytest-asyncio>=1.4.0",
+]

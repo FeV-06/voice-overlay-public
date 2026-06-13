@@ -1,0 +1,8 @@
+faster-whisper>=1.0.0
+sounddevice>=0.4.6
+numpy>=1.24.0
+
+# Optional platform deps:
+# evdev>=1.7.0          # Linux hotkey (pip install voice-overlay[linux])
+# PyGObject>=3.44.0     # Linux system-tray (system package, not pip)
+# scipy>=1.10.0         # Audio processing (if not using faster-whisper built-in)
