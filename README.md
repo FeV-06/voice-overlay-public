@@ -7,16 +7,16 @@ Real-time voice transcription overlay for Linux and Windows. Reads microphone in
 ### Linux
 
 ```bash
-uv tool install "voice-overlay[linux]"
-scripts/setup-linux.sh     # one-time permission setup
+uv tool install "voice-overlay[linux] @ git+https://github.com/FeV-06/voice-overlay-public"
+scripts/setup-linux.sh
 voice-overlay
 ```
 
 ### Windows
 
 ```powershell
-uv tool install "voice-overlay[windows]"
-scripts/setup-windows.ps1  # one-time dependency check
+uv tool install "voice-overlay[windows] @ git+https://github.com/FeV-06/voice-overlay-public"
+scripts/setup-windows.ps1
 voice-overlay
 ```
 
